@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+    <link rel="stylesheet" href="css/index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/validar.js"></script>
+</head>
+<body>
+
+<!-- Note -->
+<div style="background: #77c9d4; padding:5px">
+  <a href="index.html">
+    <img src="media/logo.jpg" width="80" height="80" >
+  </a>
+  <h1>Ikasbide Colegio/Ikastetxea</h1>
+</div>
+
+<!-- Header -->
+<div class="header">
+
+</div>
+
+<!-- Navigation Bar -->
+<div class="navbar">
+  <a href="index.html">Inicio</a>
+  <a href="zona_usuarios.html">Zona usuarios</a>
+</div>
+
+<!-- The flexible grid (content) -->
+<div class="row">
+  <div class="main">
+    <div class="noticia1">
+      <h2>EP5º El cuerpo humano</h2>
+      <h5>4 de Diciembre de 2019</h5>
+      <div class="infonoticia">
+          <span><img src="media/cuerpo_humano_ancho.jpg" width="95%" height="25%"></span>
+      <span>Los alumnos de 5º de primaria han realizado un proyecto muy interesante y divertido para desarrollar el tema de El cuerpo humano y salud. Para comenzar, en grupos han preparado una “mochilas” explicativas de los cuatro aparatos (digestivo, respiratorio, circulatorio y excretor) para más tarde presentárselas a sus compañeros. Después de esto, han estudiado los huesos y los músculos con ayuda de unos puzles y han trabajado los 5 sentidos de manera práctica. Para terminar han realizado el repaso del tema de manera lúdica con un Trivial temático. Hemos aprendido un montón pasándonoslo fenomenal.</span>
+      </div>
+    </div>
+    <div class="noticia2">
+      <h2>Proyecto Udazkena</h2>
+      <h5>1 de Diciembre de 2019</h5>
+      <div class="infonoticia">
+          <span><img src="media/monte.jpg" width="95%" height="25%"></span>
+      <span>Hace dos semanas empezamos con el proyecto “Udazkena”. Lo hemos desarrollado en diferentes asignaturas y gracias a ello hemos conseguido un bonito trabajo.
+
+        Por un lado, en la asignatura de Plástica aprendimos a secar las hojas para más tarde pintarlas a nuestro gusto. Para terminar, hemos hecho un gran mural entre las dos clases de quinto de primaria.
+        
+        Por otro lado, en la asignatura de Lengua Castellana preparamos una ficha de una planta o árbol en donde aprendieron las diferentes partes de las que debe estar compuesta dicha ficha. Además, desde la asignatura de Gaitasun Digitala buscaron la información sobre su planta o árbol y también aprendieron a desarrollarla en un documento Word.
+        
+        ¡Ha estado genial! ¡Con imaginación y tiempo todo es posible!</span>
+      </div>
+    </div>
+    </div>
+  <div class="side">
+    <h2>Sobre nosotros</h2>
+    <img src="media/ikasbide.jpg">
+    <b>Podras encontrarnos en:</b>
+    <br>
+    <b>Calle SIMÓN BOLIVAR, 5 Bajo;Esq G, 48010 Revilla, BILBAO</b>
+    <h3>HORARIOS</h3>
+    <p>Lunes a Viernes 8:30–13:30, 14:30–19:00</p>
+    <p>Tlf: 944 21 03 30</p><br>
+  </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  <form method="post" action="php/libro.php" onsubmit="return validar();">
+    <h3>¿Tienes alguna sugerencia? ¡Escribenos!</h3>
+    <input type="text" name="nombre" id="nombre" placeholder="Nombre *" ><br>
+    <input type="text" name="correo" id="correo" placeholder="Correo *" >
+    <textarea type="text" name="mensaje" id="mensaje" placeholder="Escriba aquí" ></textarea>
+    <input type="submit" value="Enviar" id="boton">
+  </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alumnos>
+   <alumno>
+        <Nombre>Ander</Nombre>
+        <Apellidos>Martinez</Apellidos>     
+        <Correo>am@gmail.com</Correo>
+        <Matematica>1</Matematica>
+        <Lengua>5</Lengua>
+        <Euskera>0</Euskera>
+        <Gizarte>8</Gizarte>
+    </alumno>
+    <alumno>
+        <Nombre>Paco</Nombre>
+        <Apellidos>Vidad</Apellidos>     
+        <Correo>pv@gmail.com</Correo>
+        <Matematica>9</Matematica>
+        <Lengua>9</Lengua>
+        <Euskera>9</Euskera>
+        <Gizarte>9</Gizarte>
+    </alumno>
+    <alumno>
+        <Nombre>Ku</Nombre>
+        <Apellidos>Fu Pa</Apellidos>     
+        <Correo>ppp@gmail.com</Correo>
+        <Matematica>5</Matematica>
+        <Lengua>5</Lengua>
+        <Euskera>5</Euskera>
+        <Gizarte>5</Gizarte>
+    </alumno>
+    <alumno>
+        <Nombre>Ander</Nombre>
+        <Apellidos>Ku</Apellidos>     
+        <Correo>ak@gmail.com</Correo>
+        <Matematica>3</Matematica>
+        <Lengua>4</Lengua>
+        <Euskera>3</Euskera>
+        <Gizarte>2</Gizarte>
+    </alumno>
+    <alumno>
+        <Nombre>Esteban</Nombre>
+        <Apellidos>Ayuso</Apellidos>     
+        <Correo>estebanco@gmail.com</Correo>
+        <Matematica>5</Matematica>
+        <Lengua>5</Lengua>
+        <Euskera>5</Euskera>
+        <Gizarte>5</Gizarte>
+    </alumno>
+    <alumno>
+        <Nombre>Iker</Nombre>
+        <Apellidos>Arto</Apellidos>     
+        <Correo>ia@gmail.com</Correo>
+        <Matematica>5</Matematica>
+        <Lengua>5</Lengua>
+        <Euskera>5</Euskera>
+        <Gizarte>5</Gizarte>
+    </alumno>
+</alumnos>

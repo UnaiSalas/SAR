@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+        <link rel="stylesheet" href="css/usuarios.css"
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script>
+        function ProfesorAlumno(){
+            if(document.getElementById('switch').checked){
+                document.getElementById('cambionotas').style.display='none';
+            }else{
+                document.getElementById('cambionotas').style.display='block';
+            }
+        }
+        </script>
+    </head>
+    <body class="zona_usuarios">
+        
+                <!-- Note -->
+                <div style="background: #77c9d4; ;padding:5px">
+                    <a href="index.html">
+                      <img src="media/logo.jpg" width="80" height="80" >
+                    </a>
+                    <h1>Ikasbide Colegio/Ikastetxea</h1>
+                  </div>
+        
+        <!-- Header -->
+        <div class="header">
+        
+        </div>
+        
+        <!-- Navigation Bar -->
+        <div class="navbar">
+            <a href="index.html">Inicio</a>
+            <a href="zona_usuarios.html">Zona usuarios</a>
+        </div>
+        
+        <!-- The flexible grid (content) -->
+        <div class="row">
+            <div class="main">
+                <div class="toggle">
+                    <input type="checkbox" name="switch" id="switch" onclick="ProfesorAlumno()">
+                    <label for="switch"></label>
+                </div>
+            </div>
+        </div>
+    <div class="notas" style="background:rgba(219, 248, 255, 0.801);">
+        <?php
+        $alumnos = simplexml_load_file("xml/alumnos.xml") or die("Failed to load");
+        ?>
+        <div id="tabla">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellidos</th>
+                        <th>Correo</th>
+                        <th>Matematicas</th>
+                        <th>Lengua</th>
+                        <th>Euskera</th>
+                        <th>Gizarte</th>
+                    </tr>
+                </thead>
+                <tbody>
+            <?php foreach($alumnos->children() as $alumno) :?>
+                <tr>
+                    <td><?php echo $alumno->Nombre; ?></td>
+                    <td><?php echo $alumno->Apellidos; ?></td>
+                    <td><?php echo $alumno->Correo; ?></td>
+                    <td><?php echo $alumno->Matematica; ?></td>
+                    <td><?php echo $alumno->Lengua; ?></td>
+                    <td><?php echo $alumno->Euskera; ?></td>
+                    <td><?php echo $alumno->Gizarte; ?></td>
+                </tr>
+            <?php endforeach; ?>
+                </tbody>
+            </table>
+        </div>
+        <br>
+        <br>
+        <div class="formularios">
+            <span><form action="php/alumnos.php" method="POST" id="cambionotas">
+                <h3>Cambio de notas</h3>
+                <input name="lista" placeholder="Alumno 1-6"><br>
+                <input name="Matematicas" placeholder="Matematicas">
+                <input name="Lengua" placeholder="Lengua">
+                <input name="Euskera" placeholder="Euskera">
+                <input name="Gizarte" placeholder="Gizarte">
+                <button type="submit">OK</button>
+            </form></span>
+        </div>
+    </div>
+    </body>
+</html>
